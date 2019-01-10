@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="basic_util" />
+        <module name="eureka_server_7001" />
+        <module name="plat_interface" />
+        <module name="plat_service_8001" />
+        <module name="zuul_gateway_9527" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
