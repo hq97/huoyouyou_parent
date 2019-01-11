@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basic_util" />
+        <module name="config_server_8848" />
         <module name="eureka_server_7001" />
         <module name="plat_interface" />
         <module name="plat_service_8001" />
