@@ -7,11 +7,15 @@ eureka:
   instance:
     prefer-ip-address: true
 spring:
+  profiles:
+    active: native
   application:
     name: huoyouyou-config-server  #注册到服务的显示的application
   cloud:
     config:
       server:
+        native:
+          search-locations: G:/git/huoyouyou-config
         git:
           uri: https://github.com/hq97/huoyouyou-config.git
           username: hq97
