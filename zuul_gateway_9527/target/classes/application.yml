@@ -1,5 +1,8 @@
 server:
   port: 9527
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
 spring:
   application:
     name: huoyouyou-service-zuul-gateway
@@ -16,6 +19,8 @@ zuul:
     plat.path: /plat/** #这是所有路径前的通配
     product.serviceId: huoyouyou-product #这是调用满足条件的服务名，注意要小写
     product.path: /product/** #这是所有路径前的通配
+    common.serviceId: huoyouyou-common #这是调用满足条件的服务名，注意要小写
+    common.path: /common/** #这是所有路径前的通配
   ignored-services: "*" #用*来通配符，忽略从9527端口通过服务名来调用
   prefix: "/services" #这是所有路径的前缀
   #访问地址如下：http://localhost:9527/services/user/provider/user/3

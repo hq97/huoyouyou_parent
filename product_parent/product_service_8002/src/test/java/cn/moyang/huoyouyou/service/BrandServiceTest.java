@@ -1,19 +1,16 @@
 package cn.moyang.huoyouyou.service;
 
-import cn.moyang.huoyouyou.ProductService_8002;
+import cn.moyang.huoyouyou.ProductServiceApplication_8002;
 import cn.moyang.huoyouyou.domain.Brand;
 import cn.moyang.huoyouyou.query.BrandQuery;
-import cn.moyang.huoyouyou.util.PageList;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = ProductService_8002.class)
+@SpringBootTest(classes = ProductServiceApplication_8002.class)
 public class BrandServiceTest {
 
     @Autowired
