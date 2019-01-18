@@ -1,71 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b214f1-3a75-4c6f-81e7-d67f785f8321" name="Default Changelist" comment="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据 +">
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/common_interface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/src/main/java/cn/moyang/huoyouyou/client/PageClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/src/main/java/cn/moyang/huoyouyou/client/PageClientFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/src/main/java/cn/moyang/huoyouyou/client/RedisClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_interface/src/main/java/cn/moyang/huoyouyou/client/RedisClientFallbackFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/CommonServiceApplication_8010.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/config/Swagger2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/RedisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/VelocityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common_parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/ProductType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/query/BrandQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/query/ProductQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/query/ProductTypeQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/query/UserQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/ProductTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/BrandMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/ProductTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IBrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IProductTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/BrandMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/ProductTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-footer.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-header-top.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-header.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-link.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-nav.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-right-sidebar.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/home.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/productType/product.type.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/productType/product.type.vm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="23b214f1-3a75-4c6f-81e7-d67f785f8321" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/FastDfsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/FastDfsApiOpr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/fast_client.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_parent/product_service_8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product_parent/product_service_8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/ProductService_8002.java" beforeDir="false" afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/ProductServiceApplication_8002.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_parent/product_service_8002/src/test/java/cn/moyang/huoyouyou/service/BrandServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/test/java/cn/moyang/huoyouyou/service/BrandServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul_gateway_9527/src/main/java/cn/moyang/huoyouyou/config/DocumentationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul_gateway_9527/src/main/java/cn/moyang/huoyouyou/config/DocumentationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul_gateway_9527/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul_gateway_9527/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul_gateway_9527/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul_gateway_9527/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul_gateway_9527/target/classes/cn/moyang/huoyouyou/config/DocumentationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/zuul_gateway_9527/target/classes/cn/moyang/huoyouyou/config/DocumentationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common_parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,9 +38,10 @@
     <session id="-2077310731">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.153" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -105,57 +49,168 @@
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.open.time.90" value="1" />
           <entry key="project.open.time.95" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="3" />
+          <entry key="conf" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="136" />
+          <entry key="java" value="146" />
           <entry key="md" value="1" />
           <entry key="properties" value="1" />
           <entry key="vm" value="7" />
-          <entry key="xml" value="39" />
+          <entry key="xml" value="41" />
           <entry key="yml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="3" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="136" />
+          <entry key="JAVA" value="146" />
           <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="VTL" value="7" />
-          <entry key="XML" value="39" />
+          <entry key="XML" value="41" />
           <entry key="YAML" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="conf" value="3" />
           <entry key="dummy" value="12" />
-          <entry key="java" value="2651" />
+          <entry key="java" value="3560" />
           <entry key="properties" value="41" />
-          <entry key="txt" value="144" />
-          <entry key="xml" value="232" />
+          <entry key="txt" value="160" />
+          <entry key="xml" value="260" />
           <entry key="yml" value="223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2651" />
-          <entry key="PLAIN_TEXT" value="156" />
+          <entry key="JAVA" value="3560" />
+          <entry key="PLAIN_TEXT" value="175" />
           <entry key="Properties" value="41" />
-          <entry key="XML" value="232" />
+          <entry key="XML" value="260" />
           <entry key="YAML" value="223" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1593">
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Brand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-269">
+              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+              <folding>
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2838#2839#0" expanded="true" />
+                <element signature="e#2897#2898#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductTypeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1863">
+              <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/BrandMapper.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/fast_client.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/FastDfsApiOpr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4050">
+              <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/FastDfsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1161">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/jdk8/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50031">
+              <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -182,9 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/config/Swagger2.java" />
-        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/config/MybatisPlusConfig.java" />
         <option value="$PROJECT_DIR$/product_parent/product_interface/pom.xml" />
         <option value="$PROJECT_DIR$/huoyouyou_gen/pom.xml" />
         <option value="$PROJECT_DIR$/huoyouyou_gen/src/main/resources/huoyouyou_product.properties" />
@@ -205,10 +257,7 @@
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/BrandMapper.xml" />
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/BrandMapper.java" />
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IBrandService.java" />
-        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java" />
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/ProductTypeController.java" />
-        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
         <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/CommonServiceApplication_8010.java" />
@@ -233,6 +282,12 @@
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/productType/product.type.vm.html" />
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/common-nav.vm" />
         <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/common_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/fdfs_client.conf" />
+        <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/FastDfsApiOpr.java" />
+        <option value="$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/FastDfsController.java" />
+        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java" />
       </list>
     </option>
   </component>
@@ -262,7 +317,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="572" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -284,74 +339,34 @@
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -359,8 +374,8 @@
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -369,141 +384,64 @@
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_interface" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="common_service_8010" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="config_server_8848" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="config_server_8848" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="config_server_8848" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="config_server_8848" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server_7001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server_7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server_7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server_7001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
@@ -545,61 +483,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="product_service_8002" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="productType" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huoyouyou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="huoyouyou_parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="huoyouyou_parent" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul_gateway_9527" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -616,7 +500,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547609295655" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547742145996" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/common_parent/common_interface/src/main/java/cn/moyang/huoyouyou" />
@@ -629,21 +513,21 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="cn.moyang.huoyouyou.service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\resources\template\productType" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.moyang.huoyouyou.config" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\resources\template" />
       <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\common_parent\common_service_8010\src\main\java\cn\moyang\huoyouyou\util" />
+      <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\resources\template" />
       <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\resources" />
       <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\huoyouyou_gen\src\main\resources" />
       <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\java\cn\moyang\huoyouyou\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.moyang.huoyouyou.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\itsorceworkspace_idea\huoyouyou_parent\product_parent\product_service_8002\src\main\resources\template\productType" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -748,11 +632,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigServerApplication_8848" />
-        <item itemvalue="Spring Boot.EurekaServerApplication_7001" />
+        <item itemvalue="Spring Boot.PlatServiceApplication_8001" />
         <item itemvalue="Spring Boot.CommonServiceApplication_8010" />
         <item itemvalue="Spring Boot.ZuulGatewayApplication_9527" />
-        <item itemvalue="Spring Boot.PlatServiceApplication_8001" />
+        <item itemvalue="Spring Boot.ConfigServerApplication_8848" />
+        <item itemvalue="Spring Boot.EurekaServerApplication_7001" />
       </list>
     </recent_temporary>
   </component>
@@ -778,7 +662,9 @@
       <workItem from="1547340503436" duration="9939000" />
       <workItem from="1547474928679" duration="6893000" />
       <workItem from="1547514763420" duration="25451000" />
-      <workItem from="1547599391479" duration="2499000" />
+      <workItem from="1547599391479" duration="6859000" />
+      <workItem from="1547686573267" duration="19820000" />
+      <workItem from="1547773030584" duration="2914000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1547099982118</created>
@@ -808,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547517630808</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据 &#10;2、中央缓存&#10;3、页面静态化">
+      <created>1547609495130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547609495130</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,12 +728,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70889000" />
+    <option name="totallyTimeSpent" value="97983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2397882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -862,10 +755,10 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.6918033" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.6918033" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.6590164" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.7557377" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -953,76 +846,23 @@
     <MESSAGE value="测试搭建的springcloud config 环境 --只搭建了一个服务端和客户端（plat_service_8001）" />
     <MESSAGE value="添加了一个打包的插件" />
     <MESSAGE value="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据" />
+    <MESSAGE value="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据 &#10;2、中央缓存&#10;3、页面静态化" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、商品模块-产品管理、类型管理 2、代码生成器 3、获取（产品类型）“树”数据 &#10;2、中央缓存&#10;3、页面静态化" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zuul_gateway_9527/src/main/java/cn/moyang/huoyouyou/ZuulGatewayApplication_9527.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/test/java/cn/moyang/huoyouyou/service/BrandServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plat_parent/plat_service_8001/src/main/java/cn/moyang/huoyouyou/PlatServiceApplication_8001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/BrandMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/BrandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/IBrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/mapper/ProductTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/ProductType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2950">
           <caret line="179" column="36" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
+          <folding>
+            <element signature="e#3531#3532#0" expanded="true" />
+            <element signature="e#3580#3581#0" expanded="true" />
+            <element signature="e#3616#3617#0" expanded="true" />
+            <element signature="e#3662#3663#0" expanded="true" />
+            <element signature="e#3693#3694#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+            <element signature="e#3792#3793#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,29 +873,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Brand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/config/Swagger2.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1159,6 +985,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,9 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,9 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,12 +1115,107 @@
     <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/template/productType/product.type.vm">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductTypeServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/csource/fastdfs/fastdfs/1.2/fastdfs-1.2.jar!/org/csource/fastdfs/StorageClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="120" column="47" lean-forward="true" selection-start-line="120" selection-start-column="47" selection-end-line="120" selection-end-column="47" />
+        <state relative-caret-position="44">
+          <caret line="534" column="15" selection-start-line="534" selection-start-column="15" selection-end-line="534" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/桌面/源码时代/JavaEE/2019-01-09-第四个项目/2019-01-16-day06-FastDFS上传图片/code/aigou_parent/common_parent/common_service_8010/src/main/java/cn/itsource/aigou/controller/FastDfsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.2.0/mybatis-plus-support-2.2.0.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/java/cn/moyang/huoyouyou/service/impl/ProductTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="87" column="57" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_parent/product_service_8002/src/main/resources/cn/moyang/huoyouyou/mapper/BrandMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/resources/fast_client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/util/FastDfsApiOpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4050">
+          <caret line="151" column="30" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common_parent/common_service_8010/src/main/java/cn/moyang/huoyouyou/controller/FastDfsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/jdk8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50031">
+          <caret line="1924" column="18" selection-start-line="1924" selection-start-column="18" selection-end-line="1924" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_parent/product_interface/src/main/java/cn/moyang/huoyouyou/domain/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding>
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2838#2839#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,7 @@ public class BrandServiceImpl extends ServiceImpl<BrandMapper, Brand> implements
         List<Brand> rows = brandMapper.selectPageList(page,query);
         //PageList total,rows
         long total = page.getTotal();
-
         return new PageList<>(total,rows);
     }
+
 }

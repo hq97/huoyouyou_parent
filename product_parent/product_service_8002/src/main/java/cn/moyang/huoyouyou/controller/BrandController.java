@@ -5,10 +5,10 @@ import cn.moyang.huoyouyou.query.BrandQuery;
 import cn.moyang.huoyouyou.service.IBrandService;
 import cn.moyang.huoyouyou.util.AjaxResult;
 import cn.moyang.huoyouyou.util.PageList;
-import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -38,17 +38,33 @@ public class BrandController {
     }
 
     /**
-    * 删除对象信息
-    * @param id
+    * 批量删除删除对象信息
+    * @param
     * @return
     */
+    @RequestMapping(value="/ids/{ids}",method=RequestMethod.DELETE)
+    public AjaxResult del(@PathVariable("ids") String ids){
+        try {
+            String[] strings = ids.split(",");
+            brandService.deleteBatchIds(Arrays.asList(strings));
+            return AjaxResult.me();
+        } catch (Exception e) {
+        e.printStackTrace();
+            return AjaxResult.me().setMessage("删除对象失败！"+e.getMessage());
+        }
+    }
+    /**
+     * 删除对象信息
+     * @param id
+     * @return
+     */
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
     public AjaxResult delete(@PathVariable("id") Long id){
         try {
             brandService.deleteById(id);
             return AjaxResult.me();
         } catch (Exception e) {
-        e.printStackTrace();
+            e.printStackTrace();
             return AjaxResult.me().setMessage("删除对象失败！"+e.getMessage());
         }
     }
