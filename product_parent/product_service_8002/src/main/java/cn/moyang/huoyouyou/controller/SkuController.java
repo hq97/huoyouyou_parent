@@ -1,8 +1,8 @@
-package ${package.Controller};
+package cn.moyang.huoyouyou.controller;
 
-import ${package.Service}.${table.serviceName};
-import ${package.Entity}.${entity};
-import cn.moyang.huoyouyou.query.${entity}Query;
+import cn.moyang.huoyouyou.service.ISkuService;
+import cn.moyang.huoyouyou.domain.Sku;
+import cn.moyang.huoyouyou.query.SkuQuery;
 import cn.moyang.huoyouyou.util.AjaxResult;
 import cn.moyang.huoyouyou.util.PageList;
 import com.baomidou.mybatisplus.plugins.Page;
@@ -12,23 +12,23 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/${table.entityPath}")
-public class ${entity}Controller {
+@RequestMapping("/sku")
+public class SkuController {
     @Autowired
-    public ${table.serviceName} ${table.entityPath}Service;
+    public ISkuService skuService;
 
     /**
     * 保存和修改公用的
-    * @param ${table.entityPath}  传递的实体
+    * @param sku  传递的实体
     * @return Ajaxresult转换结果
     */
     @RequestMapping(value="/save",method= RequestMethod.POST)
-    public AjaxResult save(@RequestBody ${entity} ${table.entityPath}){
+    public AjaxResult save(@RequestBody Sku sku){
         try {
-            if(${table.entityPath}.getId()!=null){
-                ${table.entityPath}Service.updateById(${table.entityPath});
+            if(sku.getId()!=null){
+                skuService.updateById(sku);
             }else{
-                ${table.entityPath}Service.insert(${table.entityPath});
+                skuService.insert(sku);
             }
             return AjaxResult.me();
         } catch (Exception e) {
@@ -45,7 +45,7 @@ public class ${entity}Controller {
     @RequestMapping(value="/{id}",method=RequestMethod.DELETE)
     public AjaxResult delete(@PathVariable("id") Long id){
         try {
-            ${table.entityPath}Service.deleteById(id);
+            skuService.deleteById(id);
             return AjaxResult.me();
         } catch (Exception e) {
         e.printStackTrace();
@@ -55,9 +55,9 @@ public class ${entity}Controller {
 
     //获取用户
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
-    public ${entity} get(@PathVariable("id")Long id)
+    public Sku get(@PathVariable("id")Long id)
     {
-        return ${table.entityPath}Service.selectById(id);
+        return skuService.selectById(id);
     }
 
 
@@ -66,9 +66,9 @@ public class ${entity}Controller {
     * @return
     */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public List<${entity}> list(){
+    public List<Sku> list(){
 
-        return ${table.entityPath}Service.selectList(null);
+        return skuService.selectList(null);
     }
 
 
@@ -79,10 +79,10 @@ public class ${entity}Controller {
     * @return PageList 分页对象
     */
     @RequestMapping(value = "/json",method = RequestMethod.POST)
-    public PageList<${entity}> json(@RequestBody ${entity}Query query)
+    public PageList<Sku> json(@RequestBody SkuQuery query)
     {
-        Page<${entity}> page = new Page<${entity}>(query.getPage(),query.getRows());
-            page = ${table.entityPath}Service.selectPage(page);
-            return new PageList<${entity}>(page.getTotal(),page.getRecords());
+        Page<Sku> page = new Page<Sku>(query.getPage(),query.getRows());
+            page = skuService.selectPage(page);
+            return new PageList<Sku>(page.getTotal(),page.getRecords());
     }
 }

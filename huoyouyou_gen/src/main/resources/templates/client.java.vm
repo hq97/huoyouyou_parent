@@ -1,9 +1,9 @@
-package cn.itsource.aigou.client;
+package cn.moyang.huoyouyou.client;
 
 import ${package.Entity}.${entity};
-import cn.itsource.aigou.query.${entity}Query;
-import cn.itsource.aigou.util.AjaxResult;
-import cn.itsource.aigou.util.PageList;
+import cn.moyang.huoyouyou.query.${entity}Query;
+import cn.moyang.huoyouyou.util.AjaxResult;
+import cn.moyang.huoyouyou.util.PageList;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.web.bind.annotation.*;

@@ -4,27 +4,106 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="cn.moyang.huoyouyou.domain.Product">
-        <id column="id" property="id" />
-        <result column="createTime" property="createTime" />
-        <result column="updateTime" property="updateTime" />
-        <result column="name" property="name" />
-        <result column="subName" property="subName" />
-        <result column="code" property="code" />
-        <result column="productType" property="productType" />
-        <result column="onSaleTime" property="onSaleTime" />
-        <result column="offSaleTime" property="offSaleTime" />
-        <result column="brandId" property="brandId" />
-        <result column="state" property="state" />
-        <result column="maxPrice" property="maxPrice" />
-        <result column="minPrice" property="minPrice" />
-        <result column="saleCount" property="saleCount" />
-        <result column="viewCount" property="viewCount" />
-        <result column="commentCount" property="commentCount" />
-        <result column="commentScore" property="commentScore" />
-        <result column="viewProperties" property="viewProperties" />
-        <result column="goodCommentCount" property="goodCommentCount" />
-        <result column="commonCommentCount" property="commonCommentCount" />
-        <result column="badCommentCount" property="badCommentCount" />
+        <id column="id" property="id"/>
+        <result column="createTime" property="createTime"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="name" property="name"/>
+        <result column="subName" property="subName"/>
+        <result column="code" property="code"/>
+        <result column="productTypeId" property="productTypeId"/>
+        <result column="onSaleTime" property="onSaleTime"/>
+        <result column="offSaleTime" property="offSaleTime"/>
+        <result column="brandId" property="brandId"/>
+        <result column="state" property="state"/>
+        <result column="maxPrice" property="maxPrice"/>
+        <result column="minPrice" property="minPrice"/>
+        <result column="saleCount" property="saleCount"/>
+        <result column="viewCount" property="viewCount"/>
+        <result column="commentCount" property="commentCount"/>
+        <result column="commentScore" property="commentScore"/>
+        <result column="viewProperties" property="viewProperties"/>
+        <result column="goodCommentCount" property="goodCommentCount"/>
+        <result column="commonCommentCount" property="commonCommentCount"/>
+        <result column="badCommentCount" property="badCommentCount"/>
+        <result column="medias" property="medias"/>
+        <result column="sku_template" property="skuTemplate"/>
     </resultMap>
 
+    <!-- List<Product> loadPageData(Page<Product> page, ProductQuery query);-->
+    <select id="loadPageData" parameterType="ProductQuery" resultMap="ProductMap">
+        SELECT
+            p.*, b.id bid,
+            b.`name` bname,
+            pt.id ptid,
+            pt.`name` ptname,
+            pe.id peid,
+            pe.description ,
+            pe.richContent
+        FROM
+            t_product p
+        LEFT JOIN t_brand b ON b.id = p.brandId
+        LEFT JOIN t_product_type pt ON pt.id = b.product_type_id
+        LEFT JOIN t_product_ext pe ON pe.productId = p.id
+    </select>
+    <resultMap id="ProductMap" type="Product">
+        <id column="id" property="id"/>
+        <result column="createTime" property="createTime"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="name" property="name"/>
+        <result column="subName" property="subName"/>
+        <result column="code" property="code"/>
+        <result column="productTypeId" property="productTypeId"/>
+        <result column="onSaleTime" property="onSaleTime"/>
+        <result column="offSaleTime" property="offSaleTime"/>
+        <result column="brandId" property="brandId"/>
+        <result column="state" property="state"/>
+        <result column="maxPrice" property="maxPrice"/>
+        <result column="minPrice" property="minPrice"/>
+        <result column="saleCount" property="saleCount"/>
+        <result column="viewCount" property="viewCount"/>
+        <result column="commentCount" property="commentCount"/>
+        <result column="commentScore" property="commentScore"/>
+        <result column="viewProperties" property="viewProperties"/>
+        <result column="goodCommentCount" property="goodCommentCount"/>
+        <result column="commonCommentCount" property="commonCommentCount"/>
+        <result column="badCommentCount" property="badCommentCount"/>
+        <result column="medias" property="medias"/>
+        <result column="sku_template" property="skuTemplate"/>
+        <!--品牌和类型-->
+        <association property="brand" javaType="Brand">
+            <id property="id" column="bid"/>
+            <result property="name" column="bname"></result>
+        </association>
+        <association property="productType" javaType="ProductType">
+            <id property="id" column="ptid"/>
+            <result property="name" column="ptname"></result>
+        </association>
+        <association property="productExt" javaType="ProductExt">
+            <id property="id" column="peid"/>
+            <result property="name" column="pename"></result>
+            <result column="description" property="description" />
+            <result column="richContent" property="richContent" />
+        </association>
+    </resultMap>
+
+
+   <!-- void onSale(Map<String, Object> params);
+   注意 map集合中有参数的使用
+    -->
+    <update id="onSale" parameterType="map">
+        UPDATE t_product set state =1,onSaleTime =#{timeStamp}
+        WHERE id IN
+          <foreach collection="idList" item="item" open="(" close=")" separator=",">
+              #{item}
+          </foreach>
+    </update>
+
+   <!-- void offSale(Map<String, Object> params);-->
+    <update id="offSale" parameterType="map">
+        UPDATE t_product set state =0,onSaleTime =#{timeStamp}
+        WHERE id IN
+        <foreach collection="idList" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </update>
 </mapper>

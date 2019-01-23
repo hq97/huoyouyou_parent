@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/product")
@@ -82,8 +83,24 @@ public class ProductController {
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Product> json(@RequestBody ProductQuery query)
     {
-        Page<Product> page = new Page<Product>(query.getPage(),query.getRows());
+     /*   Page<Product> page = new Page<Product>(query.getPage(),query.getRows());
             page = productService.selectPage(page);
             return new PageList<Product>(page.getTotal(),page.getRecords());
+    */
+        return  productService.selectPageList(query);
     }
+
+    @RequestMapping(value="/onSale",method= RequestMethod.POST)
+    public AjaxResult onSale(@RequestBody Map<String,Object> params){
+        try {
+            String  ids =(String) params.get("ids");
+            Integer onSale = Integer.valueOf(params.get("onSale").toString());
+            productService.onSale(ids,onSale);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setMessage("保存对象失败！"+e.getMessage());
+        }
+    }
+
 }

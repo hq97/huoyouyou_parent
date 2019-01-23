@@ -1,10 +1,13 @@
 package cn.moyang.huoyouyou.domain;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * <p>
@@ -12,7 +15,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author hqtest
- * @since 2019-01-14
+ * @since 2019-01-18
  */
 @TableName("t_product")
 public class Product extends Model<Product> {
@@ -38,7 +41,12 @@ public class Product extends Model<Product> {
     /**
      * 商品类型ID
      */
-    private Long productType;
+    private Long productTypeId;
+    /**
+     * 商品类型  用来返回数据到前台
+     */
+    @TableField(exist = false)
+    private ProductType productType;
     /**
      * 上架时间
      */
@@ -48,6 +56,11 @@ public class Product extends Model<Product> {
      */
     private Long offSaleTime;
     private Long brandId;
+    @TableField(exist = false)
+    private Brand brand; // 用来返回数据到前台
+
+    @TableField(exist = false) //只是用来接收数据,数据库还是没有
+    private ProductExt productExt = new ProductExt();
     /**
      * 状态
      */
@@ -83,8 +96,13 @@ public class Product extends Model<Product> {
     private Integer goodCommentCount;
     private Integer commonCommentCount;
     private Integer badCommentCount;
+    private String medias;
 
-
+    /**
+     * sku选项模板
+     */
+    @TableField("sku_template")
+    private String skuTemplate;
     public Long getId() {
         return id;
     }
@@ -133,19 +151,25 @@ public class Product extends Model<Product> {
         this.code = code;
     }
 
-    public Long getProductType() {
-        return productType;
+    public Long getProductTypeId() {
+        return productTypeId;
     }
 
-    public void setProductType(Long productType) {
-        this.productType = productType;
+    public void setProductTypeId(Long productTypeId) {
+        this.productTypeId = productTypeId;
     }
 
-    public Long getOnSaleTime() {
-        return onSaleTime;
+    public String  getOnSaleTime() {
+        if (onSaleTime == null)
+            return null;
+        Date date = new Date(this.onSaleTime);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
+        return format.format(date);
     }
 
     public void setOnSaleTime(Long onSaleTime) {
+
         this.onSaleTime = onSaleTime;
     }
 
@@ -253,9 +277,49 @@ public class Product extends Model<Product> {
         this.badCommentCount = badCommentCount;
     }
 
+    public String getMedias() {
+        return medias;
+    }
+
+    public void setMedias(String medias) {
+        this.medias = medias;
+    }
+
     @Override
     protected Serializable pkVal() {
         return this.id;
+    }
+
+    public ProductType getProductType() {
+        return productType;
+    }
+
+    public void setProductType(ProductType productType) {
+        this.productType = productType;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public ProductExt getProductExt() {
+        return productExt;
+    }
+
+    public void setProductExt(ProductExt productExt) {
+        this.productExt = productExt;
+    }
+
+    public String getSkuTemplate() {
+        return skuTemplate;
+    }
+
+    public void setSkuTemplate(String skuTemplate) {
+        this.skuTemplate = skuTemplate;
     }
 
     @Override
@@ -267,7 +331,7 @@ public class Product extends Model<Product> {
         ", name=" + name +
         ", subName=" + subName +
         ", code=" + code +
-        ", productType=" + productType +
+        ", productTypeId=" + productTypeId +
         ", onSaleTime=" + onSaleTime +
         ", offSaleTime=" + offSaleTime +
         ", brandId=" + brandId +
@@ -282,6 +346,7 @@ public class Product extends Model<Product> {
         ", goodCommentCount=" + goodCommentCount +
         ", commonCommentCount=" + commonCommentCount +
         ", badCommentCount=" + badCommentCount +
+        ", medias=" + medias +
         "}";
     }
 }
